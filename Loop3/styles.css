@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+body,html{
+  width:100vw;
+  height:100vh;
+  position:absolute;
+
+}
+.background{ 
+  background-color:#16a085;
+  width:100%;
+  height:100vh;
+  
+}
+.table{
+  position:relative;
+  top:10rem;
+  font-family:'Roboto',sans-serif;
+  background-image: url(img/bicycle.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:0rem 10rem;
+  width:40rem;
+  height:30rem;
+  line-height: 2rem;
+  background-color: white;
+  border-radius:5px;
+  margin:auto;
+  color:rgba(0,0,0,0.7);
+  padding:3.5rem;
+  box-shadow: 1px 1px 10px 1px black;
+
+  
+}
+h1{
+  font-weight: 900;
+  font-size:1.5rem;
+  color:black;
+  margin-bottom:1.5rem;
+  margin-top:-1rem;
+}
+p{
+  color:rgba(0,0,0,0.3);
+  font-weight: 500;
+}
+
+/*
+.bike{
+  width:100%;
+  margin:0 auto;  
+}
+
+.bikepic{
+  z-index:3;
+  width:80%;
+}
+*/
+.account, .price{
+  float:right;
+  
+}
+.word{
+  margin-top:1rem;
+  font-weight: 500
+}
+.total, .price{
+  font-weight: 800;
+  font-size:1.3rem
+  
+}
+.price{
+  color:black;
+}
+
+.account{
+  position:relative;
+  border:1.1px solid rgba(0,0,0,0.2);
+  border-radius:50%;
+  padding:8px;
+}
+.account:hover{
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+
+
+  box-shadow:0 0 0 4px rgba(0,0,0,0.05);
+  /*
+  border:3px solid rgba(0,0,0,0.2);
+  margin-right:-4px;
+  margin-top:-4px;
+  border-width:5px;
+  cursor:pointer;
+*/
+}
+/*
+.account {
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #dedede;
+  position: relative;
+}
+
+.account:hover {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.account:active {
+  top: 1px;
+}
+
+img{
+  display: block;
+}
