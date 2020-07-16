@@ -139,6 +139,7 @@ body {
 
 .comment {
     text-align: right;
+    
 }
 
 .counter {
@@ -153,5 +154,7 @@ body {
     bottom:4.2%;
     
 }
-
+.tag:hover{
+    cursor:pointer;
+}
 
