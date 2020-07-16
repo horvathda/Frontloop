@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family: "Roboto", sans-serif;
+    
+}
+header{
+    position:relative;
+    text-transform: uppercase;
+    width:50%;
+    
+}
+ul{
+  list-style-type: none;
+    
+}
+il{
+  display: inline;
+}
