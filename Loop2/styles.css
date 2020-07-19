@@ -109,13 +109,16 @@ img{
 .blue{
   
   float:left;
-  position:relative;
+  position:absolute;
   background-color:dodgerblue;
   color:rgba(255,255,255,0.6);
   padding-top:4%;  
   text-align:center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  width:22rem;
+  height:5rem;
+  bottom:20rem;
   
 
 }
@@ -124,6 +127,6 @@ img{
 
 }
 .blue:active {
-  width:100%;
-  height:24%;
-  top:1%;
+  height:4.5rem;
+}
+
