@@ -1,23 +1,167 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin:0;
-    padding:0;
-    font-size:16px;
-    font-family: "Roboto", sans-serif;
-    
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8ebe9;
+  height: 100vh;
+  width: 100vw;
 }
-header{
-    position:relative;
-    text-transform: uppercase;
-    width:50%;
-    
+
+.container {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  width: 70%;
+  height: 80%;
+  background-color: white;
+  padding: 2%
 }
-ul{
-  list-style-type: none;
-    
+
+.link {
+  text-decoration: none;
+  color: black;
+  opacity: 50%;
+  margin-left: 3rem;
+  font-weight: 500;
 }
-il{
-  display: inline;
+
+navbar {
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 5%;
+  z-index: 3;
+}
+
+.back {
+  float: left;
+  margin-left: 1rem;
+  ;
+
+}
+
+.language {
+  float: right;
+}
+
+.arrow {
+  width: 1.2rem;
+}
+
+.active {
+  opacity: 70%;
+}
+
+.link:hover {
+  opacity: 70%;
+  transition:opacity 0.2s ease-in-out;
+}
+
+.background {
+  position: absolute;
+  width: 36%;
+  height: 100%;
+  background-image: url(img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  float:left;
+  
+
+}
+.tartalom{
+  width:64%;
+  height:100%;
+  float:right;
+  padding:9%;
+  font-family: 'Playfair+Display', serif;
+  margin-top:%;
+
+  
+}
+.title{
+  font-weight: 400;
+  font-size:4rem;
+  width:100%;
+  padding:0;
+  margin:0;
+    line-height:0.9;
+}
+.title::after{
+  display:inline-block;
+  content: "";
+  background-color:black;
+  width:7rem;
+  height:0.15rem;
+  margin-bottom:3%;
+  margin-left:1.5rem;
+}
+.by{
+  font-weight: 400;
+  font-size:1.3rem;
+  margin-top:2rem;
+}
+.video{
+  display: table;
+  width:50%;
+  
+  float:left;
+  margin-top:2rem;
+}
+
+
+
+.preview{
+  width:90%;
+  
+}
+.play{
+  position: relative;
+  text-align: center;
+  width:90%;
+  height:100%;
+  top:-5rem;
+  border-radius:50%;
+  text-align: center;
+}
+.round{
+  display: table;
+  width:3rem;
+  height:3rem;
+  margin:auto;
+  border-radius:50%;
+  background-color:rgba(255,255,255,0.5);
+  cursor: pointer;
+
+  
+  
+}
+.triangle{
+  display: table-cell;
+  vertical-align: middle;
+  
+  
+}
+.more{
+  margin-top:-3rem;
+  text-transform: uppercase;
+  font-size: 0.8;
+    cursor: pointer;
+
+}
+.text{
+  float:left;;
+  width:50%;
+  line-height: 2;
+  font-weight: 400;
+  
 }
