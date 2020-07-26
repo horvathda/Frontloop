@@ -7,20 +7,26 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+   height: 100vh;
+  width: 100vw;
+  
+}
+.root{
   font-family: "Roboto", sans-serif;
   background-color: #f8ebe9;
-  height: 100vh;
-  width: 100vw;
+  width:100%;
+  height:100%;
+  position: absolute;
+  
 }
 
 .container {
-  position: absolute;
-  left: 15%;
-  top: 10%;
-  width: 70%;
-  height: 80%;
-  background-color: white;
-  padding: 2%
+  width:1000px;
+  margin:100px auto; 
+  background: #fff;
+  box-shadow: 0 50px 60px -25px rgba(204, 144, 127, 0.9);
+  display: flex;
+  
 }
 
 .link {
@@ -29,29 +35,43 @@ body {
   opacity: 50%;
   margin-left: 3rem;
   font-weight: 500;
+  
 }
 
-navbar {
-  position: relative;
+.left {
+  width:40%;
+  background: url(img/background.jpg) no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+
+}
+.right{
+  width:60%;
+}
+
+.header {
+  position:relative;
+  top:30px;
+  right:-200px;
   text-transform: uppercase;
   width: 100%;
-  margin: 5%;
+  height:5%;
   z-index: 3;
+  display: inline-flex;
+  
 }
 
 .back {
-  float: left;
-  margin-left: 1rem;
-  ;
-
+  position:relative;
+  text-transform: uppercase;
+  top:30px;
+  right:30px;
+  
 }
-
-.language {
-  float: right;
-}
-
 .arrow {
   width: 1.2rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .active {
@@ -63,38 +83,24 @@ navbar {
   transition:opacity 0.2s ease-in-out;
 }
 
-.background {
-  position: absolute;
-  width: 36%;
-  height: 100%;
-  background-image: url(img/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  float:left;
-  
 
-}
 .tartalom{
-  width:64%;
+  width:100%;
   height:100%;
   float:right;
   padding:9%;
-  font-family: 'Playfair+Display', serif;
-  margin-top:%;
+  font-family: 'Playfair Display', serif;
 
   
 }
 .title{
-  font-weight: 400;
-  font-size:4rem;
+   font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  line-height: 66px;
   width:100%;
   padding:0;
   margin:0;
-    line-height:0.9;
+  line-height:0.9;
 }
 .title::after{
   display:inline-block;
@@ -106,9 +112,9 @@ navbar {
   margin-left:1.5rem;
 }
 .by{
-  font-weight: 400;
-  font-size:1.3rem;
-  margin-top:2rem;
+    margin-top: 30px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
 }
 .video{
   display: table;
@@ -121,17 +127,21 @@ navbar {
 
 
 .preview{
-  width:90%;
+  width:70%;
+  cursor: pointer;
+
   
 }
 .play{
   position: relative;
   text-align: center;
-  width:90%;
+  width:70%;
   height:100%;
   top:-5rem;
   border-radius:50%;
-  text-align: center;
+    cursor: pointer;
+
+
 }
 .round{
   display: table;
@@ -140,7 +150,6 @@ navbar {
   margin:auto;
   border-radius:50%;
   background-color:rgba(255,255,255,0.5);
-  cursor: pointer;
 
   
   
@@ -148,6 +157,8 @@ navbar {
 .triangle{
   display: table-cell;
   vertical-align: middle;
+  position: relative;
+  top:3px;
   
   
 }
