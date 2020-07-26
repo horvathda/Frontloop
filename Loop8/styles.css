@@ -22,7 +22,8 @@ body {
 
 .container {
   width:1000px;
-  margin:100px auto; 
+  height:80%;
+  margin:70px auto; 
   background: #fff;
   box-shadow: 0 50px 60px -25px rgba(204, 144, 127, 0.9);
   display: flex;
@@ -127,7 +128,7 @@ body {
 
 
 .preview{
-  width:70%;
+  width:80%;
   cursor: pointer;
 
   
@@ -135,7 +136,7 @@ body {
 .play{
   position: relative;
   text-align: center;
-  width:70%;
+  width:80%;
   height:100%;
   top:-5rem;
   border-radius:50%;
@@ -163,10 +164,11 @@ body {
   
 }
 .more{
-  margin-top:-3rem;
+  margin-top:rem;
   text-transform: uppercase;
-  font-size: 0.8;
-    cursor: pointer;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 300;
 
 }
 .text{

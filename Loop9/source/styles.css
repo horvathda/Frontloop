@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background: #F7CD76;
+  color: #333;
+}
+
+.root {
+  width: 800px;
+  margin: 100px auto;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-height: 450px;
+}
+
+.card__side {
+  flex-basis: 300px;
+  background: #F2F2F2;
+  padding: 40px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.card__main {
+  flex-grow: 1;
+  padding: 40px;
+  overflow: auto;
+}
+
+.card__top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.card__title {
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+.card__separator {
+  border-top: 1px solid #dedede;
+  margin-bottom: 40px;
+}
+
+.card__list-item {
+  margin-bottom: 30px;
+}
+
+.card__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.icon,
+.icon__image {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.credit-card {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  color: #727272;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.credit-card:hover,
+.credit-card_active {
+  box-shadow: 0 0 0 2px #8793C6;
+}
+
+.credit-card__logo {
+  max-width: 60px;
+  max-height: 40px;
+}
+
+.credit-card__number {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.credit-card__date {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.price__cents {
+  font-size: 10px;
+}
+
+.price_total {
+  font-size: 24px;
+}
+
+.price_total .price__cents {
+  font-size: 16px;
+}
+
+.price_minus {
+  color: #8897C6;
+}
+
+.price_plus {
+  color: #8BCD5E;
+}
+
+.history__item {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.history__item:first-child {
+  margin-top: 0;
+}
+
+.history__icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #dedede;
+  margin-right: 30px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.history__symbol {
+  width: 13px;
+  vertical-align: middle;
+}
+
+.history__content {
+  flex-grow: 1;
+}
+
+.history__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.history__subtitle {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #B4B4B4;
+}
+
+.history__value {
+  padding-left: 30px;
+}

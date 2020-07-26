@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 9</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    Prices are the same blocks with different modifications - this way you can change
+    the size or the color of the price just by adding an additional class
+    and you don't have to change html code.
+
+    2.
+    No second hint here :)
+    You are pretty much ready for the first challenge!
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__side">
+        <div class="card__top">
+          <div class="card__title">
+            My Wallets
+          </div>
+          <div class="card__top-content">
+            <a href="#" class="icon">
+              <img src="./img/plus.svg" class="icon__image" />
+            </a>
+          </div>
+        </div>
+
+        <div class="credit-card card__list-item">
+          <img src="./img/visa.svg" class="credit-card__logo" />
+          <div class="credit-card__number">
+            **** **** **** 2562
+          </div>
+          <div class="credit-card__date">
+            Valid thru: 12/17
+          </div>
+        </div>
+
+        <div class="credit-card credit-card_active card__list-item">
+          <img src="./img/mastercard.svg" class="credit-card__logo" />
+          <div class="credit-card__number">
+            **** **** **** 2101
+          </div>
+          <div class="credit-card__date">
+            Valid thru: 07/19
+          </div>
+        </div>
+
+        <div class="credit-card card__list-item">
+          <img src="./img/maestro.svg" class="credit-card__logo" />
+          <div class="credit-card__number">
+            **** **** **** 8335
+          </div>
+          <div class="credit-card__date">
+            Valid thru: 09/17
+          </div>
+        </div>
+      </div>
+      <div class="card__main">
+        <div class="card__top">
+          <div class="card__title">
+            Current Balance
+          </div>
+          <div class="card__top-content">
+            <div class="price price_total">
+              $729.<sup class="price__cents">00</sup>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__separator"></div>
+
+        <div class="history">
+          <div class="history__item">
+            <span class="history__icon">
+              <img src="./img/minus.svg" class="history__symbol" />
+            </span>
+            <div class="history__content">
+              <div class="history__title">
+                Apple iPhone 7, 128 GB
+              </div>
+              <div class="history__subtitle">
+                Electronics #32343424 - 12 July 2015
+              </div>
+            </div>
+            <div class="history__value">
+              <div class="price price_minus">
+                $650.<sup class="price__cents">00</sup>
+              </div>
+            </div>
+          </div>
+          <div class="history__item">
+            <span class="history__icon">
+              <img src="./img/plus.svg" class="history__symbol" />
+            </span>
+            <div class="history__content">
+              <div class="history__title">
+                Funds Added
+              </div>
+              <div class="history__subtitle">
+                Payment #5435 - 11 July 2015
+              </div>
+            </div>
+            <div class="history__value">
+              <div class="price price_plus">
+                $900.<sup class="price__cents">00</sup>
+              </div>
+            </div>
+          </div>
+          <div class="history__item">
+            <span class="history__icon">
+              <img src="./img/minus.svg" class="history__symbol" />
+            </span>
+            <div class="history__content">
+              <div class="history__title">
+                Energy Bill
+              </div>
+              <div class="history__subtitle">
+                Other #745237423 - 11 July 2015
+              </div>
+            </div>
+            <div class="history__value">
+              <div class="price price_minus">
+                $84.<sup class="price__cents">90</sup>
+              </div>
+            </div>
+          </div>
+          <div class="history__item">
+            <span class="history__icon">
+              <img src="./img/minus.svg" class="history__symbol" />
+            </span>
+            <div class="history__content">
+              <div class="history__title">
+                The Eye Cinema Ticket
+              </div>
+              <div class="history__subtitle">
+                Entertainment #32343424 - 10 July 2015
+              </div>
+            </div>
+            <div class="history__value">
+              <div class="price price_minus">
+                $40.<sup class="price__cents">00</sup>
+              </div>
+            </div>
+          </div>
+          <div class="history__item">
+            <span class="history__icon">
+              <img src="./img/minus.svg" class="history__symbol" />
+            </span>
+            <div class="history__content">
+              <div class="history__title">
+                McFood Restaurant
+              </div>
+              <div class="history__subtitle">
+                Cafes #32448 - 10 July 2015
+              </div>
+            </div>
+            <div class="history__value">
+              <div class="price price_minus">
+                $10.<sup class="price__cents">50</sup>
+              </div>
+            </div>
+          </div>
+          <div class="history__item">
+            <span class="history__icon">
+              <img src="./img/minus.svg" class="history__symbol" />
+            </span>
+            <div class="history__content">
+              <div class="history__title">
+                Gas Station
+              </div>
+              <div class="history__subtitle">
+                Other #2138453 - 10 July 2015
+              </div>
+            </div>
+            <div class="history__value">
+              <div class="price price_minus">
+                $30.<sup class="price__cents">00</sup>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
