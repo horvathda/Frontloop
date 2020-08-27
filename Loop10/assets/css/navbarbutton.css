@@ -1,0 +1,36 @@
+
+.navbar{
+    float:right;
+}
+.logo{
+    position: relative;
+    top:2rem;
+}
+.nav-button {
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    float: left;
+
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 0.8rem;
+}
+
+.nav-button a:hover {
+    color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+input {
+    border: 0;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+    width: 86%;
+}
+
+input:focus {
+    outline: none !important;
+}

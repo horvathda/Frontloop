@@ -1,0 +1,12 @@
+.red-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+    background-color:#ea625c;
+    padding:10px;
+    
+}
+.red-button:hover{
+    background-color:#ea4e47;
+}

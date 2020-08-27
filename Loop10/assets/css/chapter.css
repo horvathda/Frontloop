@@ -1,0 +1,54 @@
+
+/*.chapter1 {
+    position: relative;
+    margin-top: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 75vh;
+    overflow: hidden;
+
+
+
+}
+*/
+.chapter1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    height: 81vh;
+    width:100%;
+
+
+}
+.introduction {
+
+    float: left;
+    padding-top: 8rem;
+    margin: auto;
+    width: 60rem;
+}
+.title{
+    text-transform: uppercase;
+
+    
+}
+.text {
+
+    color: #999999;
+    width: 30rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    border-left: 2px solid #999999;
+    padding-left: 2rem;
+}
+
+.picture {
+    position: absolute;
+    right: -19vw;
+    
+    width: 40rem;
+    height: 37.65rem;
+    background-image: url(/assets/img/watches.jpg);
+    background-repeat: no-repeat;
+    background-position: 10rem 2rem;
+    
+    background-size: 40rem  ;
+
+}
