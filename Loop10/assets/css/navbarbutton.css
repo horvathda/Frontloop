@@ -5,6 +5,7 @@
 .logo{
     position: relative;
     top:2rem;
+    margin-left:1%;
 }
 .nav-button {
     padding-right: 15px;
