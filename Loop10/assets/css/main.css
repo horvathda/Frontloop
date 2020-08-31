@@ -26,7 +26,7 @@ html {
     overflow:hidden;	
 }	
 
-.head, .chapter1 {	
+.head{	
     width: 60rem;	
     margin: auto;	
 
