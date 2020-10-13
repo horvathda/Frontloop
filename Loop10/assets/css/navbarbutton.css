@@ -1,4 +1,8 @@
+.head{	
+    width: 59rem;	
+    margin: auto;	
 
+}	
 .navbar{
     float:right;
 }
@@ -6,36 +10,44 @@
 
 .logo{
     position: relative;
-    width:30px;
-    top:2rem;
-    margin-left:1%;
+    width:24px;
+    top:1.2rem;
+    margin-left:1.5%;
 }
 
 .nav-button {
-    padding-right: 15px;
-    font-weight: 600;
-    font-size: 0.9rem;
+  position: relative;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 0.85rem;
     float: left;
+  top:.2rem;
 
 }
 
 .head-link{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.3);
     padding-bottom: 0.8rem;
+    transition:color 0.15s ease-in;
+
 }
 
 .head-link:hover {
-    color: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 
 .input {
     border: 0;
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
-    width: 86%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    transition:color 0.15s ease-in ;
+  transition: transform 0.15s ease-in ;
+
 }
 
 .input:focus {
     outline: none !important;
+    transform: scale(1.1);
+  color:rgba(0,0,0,0.6);
 }

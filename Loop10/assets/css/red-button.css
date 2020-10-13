@@ -2,14 +2,18 @@
     width:50vw;
 }
 .red-button{
+  font-size: 0.75rem;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     color:white;
     background-color:#ea625c;
     padding:10px;
+  padding-left:20px;
+  padding-right:20px;
+  transition: background-color 0.15s ease-in-out;
     
 }
-.red-button:hover{
+.red-button:hover {
     background-color:#ea4e47;
 }
