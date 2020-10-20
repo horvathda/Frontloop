@@ -1,0 +1,63 @@
+display: grid;
+
+
+grid-template-columns:1fr 2fr 3fr;   mennyi oszlop legyen és milyen széles
+grid-template-rows:100px 50px ;      mennyi sor legyen és milyen magas
+
+grid-template-columns: repeat(3, 20px [col-start]); sorok 3* 20 pixel magas legyen
+
+
+column-gap: 15px;        térköz az oszlpok között
+row-gap: 25px;           térköz a sorok között
+gap:  25px 15px          mindezt egyszerre is lehet.	
+
+justify-items:start/end/center/strech          grid itemke igazítása vízszintesen.
+align-items:start/end/center/strech            grid itemek függőleges elhelyezése
+place-item: align-items / justify-items        grid itemek együttes elhelyezése.
+
+
+
+ha maga a grid nem foglalja el az egész helyet a grid containerben:
+
+justify-content:
+
+start – elejére igazítja///aligns the grid to be flush with the start edge of the grid container
+end – végéhez igazítja///aligns the grid to be flush with the end edge of the grid container
+center –  középre igazít///aligns the grid in the center of the grid container
+stretch – újra méretezi a gridet,h kitöltse a rendelkezésre álló teret///resizes the grid items to allow the grid to fill the full width of the grid container
+space-around – egyenlő távolságra a végektől ///places an even amount of space between each grid item, with half-sized spaces on the far ends
+space-between –  nincs távolság a végeken ///places an even amount of space between each grid item, with no space at the far ends
+space-evenly – egyenlő távolság a gridek között beleértve a végeket is.///places an even amount of space between each grid item, including the far ends
+
+align-content:
+
+start – elejére igazítja///aligns the grid to be flush with the start edge of the grid container
+end – végéhez igazítja///aligns the grid to be flush with the end edge of the grid container
+center –  középre igazít///aligns the grid in the center of the grid container
+stretch – újra méretezi a gridet,h kitöltse a rendelkezésre álló teret///resizes the grid items to allow the grid to fill the full width of the grid container
+space-around – egyenlő távolságra a végektől ///places an even amount of space between each grid item, with half-sized spaces on the far ends
+space-between –  nincs távolság a végeken ///places an even amount of space between each grid item, with no space at the far ends
+space-evenly – egyenlő távolság a gridek között beleértve a végeket is.///places an even amount of space between each grid item, including the far ends
+
+
+place-content:align-content/justify-content.
+együttes használatukra is van lehetőség.
+
+
+grid-auto-columns:150px; az új grid itemek mindig  egy 150px oszlopot fognak kapni.
+grid-auto-rows:150px; az új grid itemek mindig egy 150px mags sort fognak kapni.
+
+
+grid-auto-flow:row/column/row dense/ column dense; Ez a property megint csak akkor nyer értelmet, amikor valami olyan felületet szeretnél építeni, ahol nem tudod, pontosan milyen és mennyi tartalom érkezik. Az Instagram discovery füle egy jó példa az auto-placement használatára.
+azt határozza meg, hogy a gridek hogy legyenek feltöltve.
+
+
+grid-column-start/grid-column-end
+grid-row-start/grid-row-end
+
+
+
+
+
+
+

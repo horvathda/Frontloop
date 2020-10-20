@@ -21,17 +21,16 @@
   min-height: 600px;
   margin:auto;
   margin-top:20vh;
+    width:100vw;
 
 }
 
-.picture {
+.picture{
   position: absolute;
   bottom: 0;
   max-height: 85%;
-  left:max(75%, 600px);
+  right:-25%;   
 }
-
-
 
 
 .introduction {
@@ -56,6 +55,7 @@
   border-left: 1.5px solid rgba(0, 0, 0, 0.4);
   margin-bottom: 3rem;
 }
+
 .chapter2{
   width:100vw;
   height:100vh;
