@@ -55,6 +55,69 @@ azt határozza meg, hogy a gridek hogy legyenek feltöltve.
 grid-column-start/grid-column-end
 grid-row-start/grid-row-end
 
+  grid-template-columns: repeat(12, 1fr);   /mennyi hely legyen alapértelmezett/
+.header {
+  grid-column: span 12;  / mennyi helyet foglaljon el az egészből
+}
+.valami_más{
+grid-column:span 2;
+
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);             ///12 egyenlő részre legyen felosztva a vízszintes tengely///
+  grid-template-rows: repeat(12, minmax(100px, auto));///12 enyenlő részre legyen felosztva a függőleges tengely///
+}
+
+.main {
+  grid-column: 2 / span 6;   ///a fő rész a 2. oszloptól kezdődjön, és tartson a 6. oszlopig.///
+  grid-row: 2 / span 10;     ///a fő rész kezdődjön a 2. sortól és tartson a 10. sorig.
+}
+
+.sidebar {
+  grid-column: span 4;       /// a side rész a 4 oszlop széles legyen.///
+  grid-row: 2 / span 8;      ///a side rész tartson a 2. sortól a 8. sorig.///
+}
+
+
+
+grid-area
+elnevezi az a gridet.
+
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+  
+.container { 
+  display: grid;                                  ///aktiválja a gridet
+  grid-template-columns: 50px 50px 50px 50px;    ///az oszlopok szélessége 50px 
+  grid-template-rows: auto;                     /// a sorok magassága auto.
+  grid-template-areas:                         ///a megfelelő itemek kitöltik a helyet amennyit adunk neki (a "." egy üres területet jelent.)/// 
+    "header header header header"                
+    "main main . sidebar"                        
+    "footer footer footer footer";               
+}
+
+
+
+justify-self: start/center/end/strech   ///vízszintes pozícionálás.
+align-self: start/center/end/strech    ///függőleges pozícionálás.
+
+place-self: align-self/justify-self    /// egyszerre tudja pozícionálni a függőleges és vízszintes irányba.
+
+
 
 
 
