@@ -18,22 +18,26 @@
 }
 
 .chapter1 {
+  display:flex;
   min-height: 600px;
   margin:auto;
   margin-top:20vh;
-    width:100vw;
+  width:100vw;
 
 }
 
 .picture{
-  position: absolute;
+    order:2;
   bottom: 0;
   max-height: 85%;
-  right:-25%;   
+  right:-25%;  
+    overflow:hidden;
 }
 
 
 .introduction {
+  order:1;
+    
   width: 60rem; 
   padding-left: 1.5rem;
   margin:auto;
