@@ -1,0 +1,37 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * reset.css....CSS reset.
+ * main.css.............Global rules and helpers.
+ * 
+ */
+
+
+
+
+
+@import url(style/reset.css);
+@import url(style/menu.css);
+@import url(style/section_1.css);
+@import url(style/container.css);
+
+/*------------*\
+  BASE SETTING
+\*------------*/
+
+
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+  font-size:12px;
+  width:100vw;
+  height:100vh;
+}
+.container{
+  width:100%;
+  height:auto;
+}

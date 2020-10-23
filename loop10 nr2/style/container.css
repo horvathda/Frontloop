@@ -1,0 +1,12 @@
+/*--------------*\
+CONTAINER SETTING
+\*--------------*/
+
+.container{
+  min-width:940px;
+}
+
+.box{
+  width:900px;
+  margin:0 auto;
+}
