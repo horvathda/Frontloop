@@ -82,7 +82,7 @@
 }
 
 .chapter4{
-  background-image: url("/assets/img/runners.jpg");
+  background: url('../img/runners.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
