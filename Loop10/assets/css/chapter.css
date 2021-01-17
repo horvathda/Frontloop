@@ -1,66 +1,111 @@
-
-.section1 {
-  width:100vw;
+.chapter1 {
+  width: 100vw;
   font-size: .8rem;
-  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 
 
 }
+
 .chapter1::after {
+  z-index: 1;
   content: "";
-  width: 100%;
+  width: 100vw;
   height: 1px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   position: absolute;
-  top:100vh;
+  top: 100vh;
+  left: 0;
 
 
 }
 
 .chapter1 {
-  display:flex;
-  min-height: 600px;
-  margin:auto;
-  margin-top:20vh;
-  width:100vw;
+  margin: auto;
+  width: 100vw;
+  height: 75vh;
 
 }
 
-.picture{
-    order:2;
-  bottom: 0;
-  max-height: 85%;
-  right:-25%;  
-    overflow:hidden;
+
+.picture {
+  height: 80vh;
+  position: absolute;
+  left: min(500px, 45%);
+  top: 10vh;
+
 }
 
 
 .introduction {
-  order:1;
-    
-  width: 60rem; 
+  width: 60rem;
   padding-left: 1.5rem;
-  margin:auto;
-  
+  margin: auto;
+
 }
 
 .title1 {
   margin-bottom: 3rem;
   width: 25rem;
-  font-size:2.5rem;
+  font-size: 2.5rem;
 }
 
-.text1 {
+
+.text1, .text2{
   width: 25rem;
+  font-size: .8rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.4);
   padding-left: 2rem;
-  padding-top:3px;
+  padding-top: 3px;
   border-left: 1.5px solid rgba(0, 0, 0, 0.4);
   margin-bottom: 3rem;
 }
 
-.chapter2{
-  width:100vw;
+.wrapper{
+  width: 900px;
+  text-align: center;
+  margin:auto;
+
+  
+}
+
+.introduction2{
+  text-align: left;
+  width:50%;
+  margin-top:150px;
+}
+
+.hand{
+  width:50%;
+}
+
+.chapter4{
+  background-image: url("/assets/img/runners.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   height:100vh;
+  margin-top:15vh;
+  
+}
+
+.introduction3{
+  width:24rem;
+  color:white;
+  margin:30vh 50vw;
+  
+}
+
+.text3{
+  width: 24rem;
+  font-size: .8rem;
+  line-height: 1.5;
+  color: white;
+  padding-left: 2rem;
+  padding-top: auto;
+  border-left: 3px solid white;
+  margin-bottom: 3rem;
+  
 }

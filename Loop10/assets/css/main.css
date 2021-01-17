@@ -1,38 +1,72 @@
 @import url(navbarbutton.css);
-@import url(chapter.css);	
-@import url(red-button.css);	
+@import url(chapter.css);
+@import url(red-button.css);
+@import url(table.css);
 
-
-* {	
-    box-sizing: border-box;	
-}	
-
-
-body,	
-html {	
-    position: relative;	
-    font-family: 'Roboto', sans-serif;	
-    padding: 0;	
-    margin: 0;	
-    height: 100vh;	
-    width:100vw;
-
-}	
-
-.container {	
-    position: absolute;	
-    width: 100vw;	
-    height: 100%;	
-    margin: 0;	
-    padding: 0;	
-}	
-
-
-
-.left {	
-    float: left;	
-}	
-
-.right {	
-    float: right;	
+* {
+  box-sizing: border-box;
 }
+
+
+body,
+html {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.container {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: max(50vw, 500px) 50vw;
+  grid-template-rows: 10vh 90vh auto;
+  grid-template-areas:
+    "header header"
+    "chapter1 picture"
+    "chapter2 chapter2"
+    "chapter3 chapter3"
+    "chapter4 chapter4";
+  overflow-x: hidden;
+}
+
+.head {
+  grid-area: header;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.chapter1 {
+  grid-area: chapter1;
+}
+
+.chapter2 {
+  grid-area: chapter2;
+}
+
+.chapter3 {
+  grid-area: chapter3
+}
+
+.chapter4 {
+  grid-area: chapter4
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
