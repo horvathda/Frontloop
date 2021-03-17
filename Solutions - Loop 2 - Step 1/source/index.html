@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 1</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    We use a trick with padding to achieve the equal width and height of the sections here.
+    As you may know, padding-top size is counted based on the width of the element.
+    So when we set padding-top to 100% the element becomes squared.
+    Then we use an absolutely positioned div inside of it so that it can contain any other html inside.
+
+    2.
+    It's a better decision not to set fixed width to a button, but to make it stretch according to the sizes of controls.
+    For instance, if we get design update and our interface size should become wider - we just need to change
+    our top level node width and other sizes and positions will adjust accordingly.
+
+  -->
+
+  <div class="interface">
+    <div class="tabs interface__tabs">
+      <div class="tabs__item tabs__item_active">
+        Synthetic
+      </div>
+      <div class="tabs__item">
+        Wool
+      </div>
+      <div class="tabs__item">
+        Denim
+      </div>
+      <div class="tabs__item">
+        Silk
+      </div>
+      <div class="tabs__item">
+        Linen
+      </div>
+    </div>
+
+    <div class="interface__text">
+      Loads should be under 8 pounds. It is recommended using neutral detergent to prevent damage to the cloth and to improve the washing results.
+    </div>
+
+    <div class="interface__controls">
+      <div class="controls">
+        <div class="controls__section controls__section_time">
+          <div class="controls__inner">
+            <div class="controls__content">
+              <div class="controls__title">
+                Timer
+              </div>
+              <div class="controls__value">
+                45 min
+              </div>
+            </div>
+          </div>
+        </div><!--
+
+        --><div class="controls__section controls__section_temperature">
+          <div class="controls__inner">
+            <div class="controls__content">
+              <div class="controls__title">
+                Temperature
+              </div>
+              <div class="controls__value">
+                Cold
+              </div>
+            </div>
+          </div>
+        </div><!--
+
+        --><div class="controls__section controls__section_load">
+          <div class="controls__inner">
+            <div class="controls__content">
+              <div class="controls__title">
+                Load
+              </div>
+              <div class="controls__value">
+                Medium
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls__nav controls__nav_previous"></div>
+        <div class="controls__nav controls__nav_next"></div>
+
+        <div class="controls__button">
+          <a href="#" class="button">
+            Start
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

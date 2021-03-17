@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://kit.fontawesome.com/61c49ee100.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--
+    FYI:
+    Textarea resize in the design is a native feature of browsers.
+    Also there is no close icon in the assets, so you should try to find another way of implementing it.
+  -->
+  <div class="container">
+    <div class="box__yellow">
+      <div class="header">
+        <h1 class="title">Account settings</h1>
+        <i class="fas fa-times"></i>
+      </div>
+      <div>
+        <img class="avatar" src="img/avatar.jpg" alt="avatar">
+      </div>
+      <div class="box__white">
+
+        <div class="textbox">
+          <form>
+            <label for="fname" class="textbox__title">Username</label><br>
+            <input type="text"  class="textbox__text" name="username" placeholder="Enter your username">
+          </form>
+        </div>
+
+        <div class="textbox textbox__name">
+          <div>
+            <form>
+              <label for="fname" class="textbox__title firstname">First name</label><br>
+              <input type="text"  class="textbox__text firstname" name="firls name" placeholder="Enter your first name">
+            </form>
+          </div>
+            <div>
+              <form>
+                <label for="fname" class="textbox__title lastname">Last name</label><br>
+                <input type="text" class="textbox__text lastname" name="last name" placeholder="Enter your last name">
+              </form>
+            </div>
+        </div>
+            <div class="textbox">
+              <form>
+                <label for="fname" class="textbox__title">Email</label><br>
+                <input type="email" class="textbox__text" name="email" placeholder="Enter your email">
+              </form>
+            </div>
+            <div class="textbox">
+              <form>
+                <label for="fname" class="textbox__title">Bio</label><br>
+                <textarea type="text" class="textbox__text" name="bio" placeholder="Tell us about yourself"></textarea>
+
+              </form>
+            </div>
+
+
+          </div>
+
+
+          <div class="buttons">
+            <h1 class="buttons__button">Cancel</h1>
+            <h1 class="buttons__button">Save</h1>
+          </div>
+        </div>
+
+
+
+      </div>
+
+</body>
+
+</html>

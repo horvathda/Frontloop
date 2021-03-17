@@ -1,0 +1,176 @@
+/*******************\
+MAIN RULES
+\*******************/
+
+
+{
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  background-color: #2f2f2f;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top:2rem;
+  
+
+}
+
+
+
+
+
+/*****************\
+YELLOW BOX
+\*****************/
+
+
+.box__yellow {
+  background-color: #fdec51;
+  width: 40%;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+
+}
+
+
+.header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3rem 3rem ;
+}
+
+
+.title{
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+}
+
+
+.fas{
+  opacity:0.6;
+  cursor: pointer;
+}
+  
+
+
+
+/***************\
+WHITE BOX BASIC
+\***************/
+
+
+.box__white{
+  background-color: #ffff;
+  display: flex;
+  flex-flow: column;
+  margin-left:3rem;
+  margin-right:-3rem;
+  padding:3rem 2rem 3rem 3rem;
+}
+
+
+.avatar{
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0.7) translate(5rem, -6rem);
+}
+
+
+
+
+
+/*****************\
+TEXT BOX
+\*****************/
+
+
+input, textarea{
+  display: flex;
+  flex-grow: 1;
+  border:none;
+  padding:10px 0;
+  border-bottom:0.5px solid rgba(0,0,0,0.3)
+}
+
+input:focus, textarea:focus{
+  border-bottom:0.5px solid rgba(0,0,0,0.3);
+    outline:none;
+}
+.textbox{
+   margin:0.5rem;
+
+}
+
+
+.textbox__title{
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.5;
+  
+}
+  
+
+.textbox__text, .textbox__text::placeholder{
+  font-weight: bold;
+  
+}
+
+
+.textbox__name{
+  display: flex;
+}
+
+
+.firstname{
+  flex-grow:1;
+}
+.lastname{
+  flex-grow:1;
+}
+
+
+
+
+/******************\
+BUTTONS
+\******************/
+
+
+.buttons{
+  display: flex;
+  flex-flow:row;
+  justify-content: flex-end;
+}
+
+
+.buttons__button{
+  opacity: 0.6;
+  font-weight: 500;
+  margin-right:3rem;
+  cursor: pointer;
+  transition: opacity .1s ease-in-out
+}
+
+
+.buttons__button:hover{
+opacity: 0.8;  
+}
+
+textarea {
+  min-height: 80px;
+  max-width: 100%;
+  min-width: 100%;

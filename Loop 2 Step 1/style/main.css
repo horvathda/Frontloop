@@ -1,0 +1,24 @@
+/*************\
+MAIN RULES
+\*************/
+
+:root{
+  --pink:#de8a89;
+}
+*{
+  box-sizing: border-box;
+}
+
+
+body, html{
+  height:100vh;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background-color: var(--pink);
+}
+
+
+.container{
+  width:100%;
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Hints:
+
+    1.
+    The main idea of the code for the lesson is not to use fixed height or absolute positioning
+    when the content or the height of elements can change in the future.
+    In our case we have a textarea that can be resized, but basically anything can affect the height of content.
+    For example, height of inputs on all website can change at some point and you'll have to manually fix
+    this wrapper if it has a fixed height value.
+
+    2.
+    We're using HTML special symbol here as an icon,
+    it helps sometimes when you need to display some predefined symbol
+    and you don't have an icon system in your project.
+    The other way was to build it using css.
+    That would be especially helpful when you need to add some hover animations to it.
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__top">
+        <div class="card__title">
+          Account settings
+        </div>
+        <div class="card__close">
+          &times;
+        </div>
+      </div>
+
+      <div class="card__inner">
+        <img src="./img/avatar.jpg" class="card__avatar" />
+
+        <div class="form">
+          <div class="form__row">
+            <div class="field">
+              <div class="field__label">
+                Username
+              </div>
+              <input class="input" placeholder="Enter your username" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field-group">
+              <div class="field-group__item">
+                <div class="field">
+                  <div class="field__label">
+                    First Name
+                  </div>
+                  <input class="input" placeholder="Enter your first name" />
+                </div>
+              </div>
+
+              <div class="field-group__item">
+                <div class="field">
+                  <div class="field__label">
+                    Last Name
+                  </div>
+                  <input class="input" placeholder="Enter your last name" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <div class="field__label">
+                Email
+              </div>
+              <input class="input" type="email" placeholder="Enter your email" />
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <div class="field__label">
+                Bio
+              </div>
+              <textarea class="input" placeholder="Tell us about yourself"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__controls">
+        <a href="#" class="card__action">
+          Cancel
+        </a>
+
+        <a href="#" class="card__action">
+          Save
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

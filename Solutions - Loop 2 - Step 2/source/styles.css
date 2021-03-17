@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #2f2f2f;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.root {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.card {
+  background: #FCEC52;
+  padding: 60px 60px 30px;
+  position: relative;
+  box-shadow: 0 22px 50px rgba(14,21,47, .2), 0 8px 20px rgba(14,21,47, .2);
+}
+
+.card__top {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.card__title {
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.card__close {
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.5;
+  user-select: none;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.card__close:hover {
+  opacity: 1;
+}
+
+.card__controls {
+  text-align: right;
+  padding-top: 30px;
+}
+
+.card__action {
+  margin-left: 40px;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #333;
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.card__action:hover {
+  opacity: 1;
+}
+
+.card__avatar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: -32px;
+}
+
+.card__inner {
+  padding: 60px 40px 40px;
+  background: #fff;
+  margin-right: -120px;
+  box-shadow: 0 22px 50px rgba(14,21,47, .2), 0 8px 20px rgba(14,21,47, .2);
+  position: relative;
+}
+
+.field-group {
+  display: flex;
+}
+
+.field-group__item {
+  flex-grow: 1;
+}
+
+.field__label {
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form__row {
+  margin-top: 20px;
+}
+
+.form__row:first-child {
+  margin-top: 0;
+}
+
+.input {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #dedede;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea.input {
+  min-height: 80px;
+  max-width: 100%;
+  min-width: 100%;
+}
