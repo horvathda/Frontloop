@@ -24,15 +24,13 @@
 .chapter1 {
   margin: auto;
   width: 100vw;
-  height: 75vh;
-
-}
+  height: 75vh;60}
 
 
 .picture {
   height: 80vh;
   position: absolute;
-  left: min(500px, 45%);
+  left: min(50rem, 60%);
   top: 10vh;
 
 }

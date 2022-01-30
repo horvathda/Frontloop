@@ -118,7 +118,61 @@ align-self: start/center/end/strech    ///függőleges pozícionálás.
 place-self: align-self/justify-self    /// egyszerre tudja pozícionálni a függőleges és vízszintes irányba.
 
 
+{/*import React from 'react';
+import emailjs from 'emailjs-com';
+import './section.css';
 
+
+export default function ContactForm() {
+
+  function SendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_dxhe3mo', 'template_nq0gh1c', e.target, 'user_WPjPCLTEiKvOIoAxLJtv9')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+  
+
+  
+
+
+
+  }
+
+  return (
+    <form className="contact-form" onSubmit={SendEmail}>
+      <label>Name</label>
+      <input 
+      type="text" 
+      name="user_name" 
+      required 
+      />
+      <label>Üzenet tárgya</label>
+      <select type="subject"
+      name="user_subject" required data-calc_value="0">
+        <option value="">Kérem válasszon!</option>
+        <option value="Tetfog Interfész">Tetfog</option>
+        <option value="WiniDoki">WiniDoki</option>
+        <option value="Öregotthon">Öregotthon</option>
+        
+        </select>
+
+    
+      <label>Email</label>
+      <input type="email" required name="user_email" />
+      <label>Message</label>
+      <textarea name="message" required   />
+      
+      <button  type="submit">Küldés</button>
+    
+    </form>
+  );
+}
+*/}
 
 
 
