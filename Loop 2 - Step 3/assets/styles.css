@@ -1,0 +1,125 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#B885E5 0%, #848AF1 100%) no-repeat;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+
+}
+
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+
+
+}
+
+.list_box {
+    border-radius: 4px;
+    background: linear-gradient(135deg, #BC7EDA, rgba(124, 100, 174, 0.5));
+    box-shadow: 0 10px 50px #7C64AE;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.list {
+    
+
+}
+
+
+.folder_section:first-child .osztaly{
+    padding-top:30px;
+}
+
+.osztaly{
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    justify-content:space-between;
+   padding:20px;
+    
+}
+
+.osztaly_card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+
+.icon_box::before{
+    /*position: absolute;
+    content: "";
+    height:30px;
+    width:1px;
+    border:1px solid white;
+    top:100px;
+    left:50%;*/
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 25px;
+    margin-left: -1px;
+    background: #fff;
+    z-index: 1;
+
+}
+
+.icon::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: 32px;
+    margin-left: -1px;
+    background: #fff;
+    z-index: 1;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 26px;
+
+
+
+
+}
+
+
+
+.osztaly {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list {
+    background: #5f5280;
+    width: 100%;
+}
+
+.osztaly li {}
+
+
+.elem {}
